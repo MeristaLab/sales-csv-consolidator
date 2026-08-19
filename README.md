@@ -14,13 +14,12 @@
 
 ```powershell
 # 初回のみ: venv作成 + 依存インストール
-cd sales-csv-consolidator
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 
 # 2回目以降（新しいターミナルを開いた時）
-cd sales-csv-consolidator; .\.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 
 # 実行（GUI版）
 python src/ui/tkinter_app.py
